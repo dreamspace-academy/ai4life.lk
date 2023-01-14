@@ -2116,7 +2116,7 @@ body {
   z-index: 1;
   border-radius: 15px 15px 0 0;
   margin: 0 auto;
-  background-color: #3f43fd;
+  background-color: #7453FC;
   overflow: hidden;
 }
 
@@ -2129,7 +2129,7 @@ body {
   bottom: -45px;
   left: -25%;
   content: "";
-  background-color: #ffffff;
+  background-color: #7453FC;
   -webkit-transform: rotate(-15deg);
   transform: rotate(-15deg);
 }
@@ -2173,7 +2173,7 @@ body {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   border-radius: 0 0 15px 15px;
-  background-color: #ffffff;
+  background-color: #7453FC;
 }
 
 .single_advisor_profile .single_advisor_details_info::after {
@@ -2183,7 +2183,7 @@ body {
   z-index: 1;
   width: 50px;
   height: 3px;
-  background-color: #3f43fd;
+  background-color: #7453FC;
   content: "";
   top: 12px;
   right: 30px;
