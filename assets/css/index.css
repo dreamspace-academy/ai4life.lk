@@ -173,10 +173,6 @@ body {
   border: 1px solid #fff;
 }
 
-section {
-  margin-top: 120px;
-}
-
 .section-heading {
   position: relative;
   z-index: 2;
@@ -1070,7 +1066,7 @@ Currently Market Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 120px 0px;
+  padding: 80px 0px;
   position: relative;
 }
 
@@ -2444,24 +2440,69 @@ body {
 }
 
 /* Bootcamp card  */
-.bootcamp-card .card{
+
+.hero-section {
+  display: flex;
+  flex-direction:column;
+  min-height: 100%;
+}
+.card-grid {
+  display: grid;
+  max-width: 1400px;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 20px;
+}
+@media (min-width: 540px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.card {
+  list-style: none;
+  position: relative;
   margin: 10px;
-  border-radius: 5% ;
 }
-.bootcamp-card .card img{
-  width: 300px;
-  border-radius: 6%;
-  margin-left: 34px;
-  margin-top: 20px;
+.card:before {
+  content: '';
+  display: block;
+  padding-bottom: 150%;
+  
 }
-.bootcamp-card h1{
-  font-weight: 900;
-  color: #020710;
-  text-align: center;
-
+.card__background {
+  background-position: center;
+  border-radius: var(--spacing-l);
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
 }
-
-.bootcamp-card p{
- font-size: 17px;
- color: #020710;
+.card:hover .card__background {
+  transform: scale(1.05) translateZ(0);
+}
+.card-grid:hover > .card:not(:hover) .card__background {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px);
+}
+.card__content {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.card__category {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.card__heading {
+  font-size: 1.9rem;
+  line-height: 1.4;
+  word-spacing: 100vw;
 }
