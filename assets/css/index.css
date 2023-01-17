@@ -705,8 +705,9 @@ Banner Style
 */
 
 .main-banner {
-  /* background-image: url(../images/banner-bg.jpg); */
+  background-image: url(../ai4life-images/pages/istockphoto-1350852089-170667a.jpg);
   background-repeat: no-repeat;
+  
   background-position: center center;
   background-size: cover;
   padding-top: 290px;
@@ -2440,4 +2441,27 @@ body {
     margin-left: 0;
   }
 
+}
+
+/* Bootcamp card  */
+.bootcamp-card .card{
+  margin: 10px;
+  border-radius: 5% ;
+}
+.bootcamp-card .card img{
+  width: 300px;
+  border-radius: 6%;
+  margin-left: 34px;
+  margin-top: 20px;
+}
+.bootcamp-card h1{
+  font-weight: 900;
+  color: #020710;
+  text-align: center;
+
+}
+
+.bootcamp-card p{
+ font-size: 17px;
+ color: #020710;
 }
