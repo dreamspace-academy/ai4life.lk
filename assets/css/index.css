@@ -11,10 +11,6 @@ figure, header, nav, section, article, aside, footer, figcaption {
   outline: 0;
 }
 
-@font-face {
-  font-family:'Audiowide';
-  src: url('./webfonts/Audiowide-Regular.ttf');
-}
 
 .clearfix:after {
   content: ".";
@@ -2466,13 +2462,14 @@ body {
   list-style: none;
   position: relative;
   margin: 10px;
+  background-color: #373941;
 }
 .card:before {
   content: '';
   display: block;
-  padding-bottom: 150%;
-  
+  padding-bottom: 120%;
 }
+
 .card__background {
   background-position: center;
   border-radius: var(--spacing-l);
