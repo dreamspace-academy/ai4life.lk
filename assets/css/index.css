@@ -2459,22 +2459,24 @@ body {
   }
 }
 .card {
+  text-align: center;
   list-style: none;
   position: relative;
   margin: 10px;
-  background-color: #373941;
+  background-color: #282B2F;
 }
 .card:before {
   content: '';
   display: block;
-  padding-bottom: 120%;
+  height: 250px;
+  text-align: center;
 }
 
 .card__background {
   background-position: center;
   border-radius: var(--spacing-l);
   bottom: 0;
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  filter: brightness(1) saturate(1.2) contrast(0.85);
   left: 0;
   position: absolute;
   right: 0;
@@ -2492,15 +2494,13 @@ body {
 .card__content {
   justify-content: center;
   position: absolute;
-  text-align: center;
-  top: 50%;
+  top: 70%;
 }
-.card__category {
-  font-size: 0.9rem;
-  text-transform: uppercase;
-}
+
 .card__heading {
-  font-size: 1.9rem;
-  line-height: 1.4;
-  word-spacing: 100vw;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
 }
+
+
