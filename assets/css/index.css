@@ -1062,7 +1062,7 @@ Currently Market Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 80px 0px;
+  padding: 50px 0px;
   position: relative;
 }
 
@@ -2124,14 +2124,14 @@ body {
   content: "";
   background-color: #7453FC;
   -webkit-transform: rotate(-15deg);
-  transform: rotate(-15deg);
+  transform: rotate(354deg);
 }
 
 @media only screen and (max-width: 575px) {
   .single_advisor_profile .advisor_thumb::after {
     height: 50px;
     bottom: -20px;
-    transform: rotate(-10deg);
+    transform: rotate(354deg);
 
   }
 }
@@ -2469,9 +2469,9 @@ body {
   list-style: none;
   position: relative;
   margin-top: 30px;
-  background-color: #362b2b;
-  height: 190px;
-  
+  background-color: #362b2b00;
+  height: 250px; 
+  margin: 5px;
 }
 /* .card:before {
   content: '';
@@ -2506,7 +2506,8 @@ body {
 }
 
 .card__heading {
-  font-size: 20px;
+  margin-top: 5px;
+  font-size: 25px;
   /* margin-top: 30px; */
   
 }
@@ -2514,18 +2515,17 @@ body {
   background-color:aqua;
   width: 100%;
 }
-@media only screen and (max-width: 575px) {
-  /* .card:before {
-    content: '';
-    display: inline;
-    height: 200px;
-    margin-top: 20px;
-  } */
+@media only screen and (max-width: 1000px) {
+  .card {
+    justify-content: center;
+    /* max-width: 240px;  */
+    height: 240px; 
+  }
 }
-@media only screen and (max-width: 1024px) {
-  /* .card:before {
-    content: '';
-    display: inline;
-    height: 200px;
-  } */
+@media only screen and (max-width: 500px) {
+  .card {
+    margin-top: 30px;
+    justify-content: center;
+    height: 240px; 
+  }
 }
