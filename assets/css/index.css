@@ -697,14 +697,15 @@ Banner Style
 */
 
 .main-banner {
-  background-image: url(../ai4life-images/pages/istockphoto-1350852089-170667a.jpg);
+  /* background-image: url(/assets/ai4life-images/Ai_bg.svg); */
+  
   background-repeat: no-repeat;
   
   background-position: center center;
   background-size: cover;
-  padding-top: 290px;
+  padding-top: 250px;
   padding-bottom: 240px;
-  background-color: #2a2a2a;
+  background-color:rgba(0, 0, 0);
 }
 
 .main-banner h6 {
@@ -792,12 +793,14 @@ Categories & Collections Style
 }
 
 .categories-collections:after {
-  background-image: url(/assets/images/category-collection-dec.png);  
-  width: 300px;
-  height: 282px;
+  background-image: url(/assets/ai4life-images/Group\ 1.svg);
+  background-position:center;
+  opacity: .5;
+  /* background-repeat:no-repeat ; */
+  width: 500px;
+  height: 100px;
   position: absolute;
-  bottom: 0;
-  right: 30px;
+  right: 20px;
   content: '';
 }
 
@@ -1188,38 +1191,6 @@ Currently Market Style
   color: #7453fc;
   border-bottom: 1px solid #7453fc;
 }
-
-
-
-/* 
----------------------------------------------
-Footer Style
---------------------------------------------- 
-*/
-
-footer {
-  background: rgb(125,90,254);
-  background: linear-gradient(132deg, rgba(125,90,254,1) 25%, rgba(160,84,244,1) 100%);
-  text-align: center;
-  padding: 25px 0px;
-}
-
-footer p {
-  color: #fff;
-}
-
-footer p a {
-  color: #fff;
-  font-weight: 500;
-  transition: all .3s;
-}
-
-footer p a:hover {
-  color: #fff;
-  opacity: 0.75;
-}
-
-
 /* 
 ---------------------------------------------
 Page Heading Style
@@ -2254,7 +2225,7 @@ body {
 /* Footer  */
 
 .footer-distributed{
-  background: #666;
+  background: rgb(0, 0, 0);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
