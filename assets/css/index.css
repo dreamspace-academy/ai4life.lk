@@ -794,14 +794,17 @@ Categories & Collections Style
 
 .categories-collections:after {
   background-image: url(/assets/ai4life-images/Group\ 1.svg);
-  background-position:center;
+  content: '';
+
+  background-position:right;
   opacity: .5;
-  /* background-repeat:no-repeat ; */
+  background-repeat:inherit;
   width: 500px;
   height: 100px;
   position: absolute;
   right: 20px;
-  content: '';
+  /* bottom: 20px; */
+  
 }
 
 .categories .item {
